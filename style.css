@@ -1,0 +1,98 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#f2f2f2;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+}
+
+.fruit-card{
+  width:100%;
+  max-width:300px;
+  background:#fff;
+  padding:20px;
+  border-radius:18px;
+  box-shadow:0 4px 25px rgba(0,0,0,0.1);
+  transition:0.3s;
+  position:relative;
+}
+
+.fruit-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 6px 30px rgba(0,0,0,0.15);
+}
+
+.tag{
+  position:absolute;
+  top:12px;
+  left:12px;
+  background:#27ae60;
+  color:#fff;
+  padding:4px 10px;
+  font-size:12px;
+  border-radius:6px;
+}
+
+.product-img{
+  width:100%;
+  height:200px;
+  object-fit:contain;
+  margin-bottom:10px;
+}
+
+.fruit-card h2{
+  font-size:20px;
+  margin-bottom:5px;
+  font-weight:600;
+}
+
+.fruit-card p{
+  font-size:14px;
+  color:#555;
+  margin-bottom:10px;
+}
+
+.price-box{
+  margin:10px 0 15px;
+}
+
+.new{
+  font-size:20px;
+  color:#27ae60;
+  font-weight:bold;
+}
+
+.old{
+  font-size:14px;
+  margin-left:8px;
+  color:#888;
+  text-decoration:line-through;
+}
+
+.btn{
+  width:100%;
+  padding:12px;
+  background:black;
+  color:white;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:15px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#333;
+}
+
+@media (max-width: 500px){
+    .card{
+        width: 100%;
+    }
+}
